@@ -1,0 +1,15 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "script"
+  },
+  "env": {
+    "shared-node-browser": true,
+    "commonjs": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "standard",
+    "plugin:prettier/recommended"
+  ]
+}

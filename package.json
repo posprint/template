@@ -1,0 +1,57 @@
+{
+  "name": "pos-print-template",
+  "version": "1.0.0",
+  "description": "JSX template for POS print.",
+  "main": "src/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode production",
+    "lint": "eslint ./lib/**/*.js",
+    "analyze": "NODE_ANALYZE=true webpack --config webpack.config.js --mode production",
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sloth-dance/template.git"
+  },
+  "keywords": [
+    "POS",
+    "print",
+    "JSX",
+    "template"
+  ],
+  "author": "Halbert Lei <princescar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sloth-dance/template/issues"
+  },
+  "homepage": "https://github.com/sloth-dance/template#readme",
+  "dependencies": {
+    "buble": "^0.20.0",
+    "dayjs": "^1.8.29",
+    "react": "^16.13.1",
+    "react-test-renderer": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jasmine": "^3.5.0",
+    "prettier": "^2.0.5",
+    "terser-webpack-plugin": "^3.0.6",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
