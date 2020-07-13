@@ -10,6 +10,9 @@ if (process.env.NODE_ANALYZE) {
 
 module.exports = {
   mode: 'production',
+  output: {
+    path: path.resolve(__dirname, 'lib'),
+  },
   module: {
     rules: [
       {

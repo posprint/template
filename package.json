@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js --mode production",
-    "lint": "eslint ./lib/**/*.js",
+    "lint": "eslint ./src/**/*.js",
     "analyze": "NODE_ANALYZE=true webpack --config webpack.config.js --mode production",
     "test": "jasmine"
   },
