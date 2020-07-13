@@ -1,4 +1,4 @@
-# POS Print Template
+# POS Print Template JSX
 
 ## Introduction
 
