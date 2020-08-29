@@ -31,6 +31,7 @@
   "dependencies": {
     "buble": "^0.20.0",
     "dayjs": "^1.8.29",
+    "numeral": "^2.0.6",
     "react": "^16.13.1",
     "react-test-renderer": "^16.13.1"
   },

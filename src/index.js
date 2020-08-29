@@ -1,6 +1,7 @@
 const vm = require('vm');
 const buble = require('buble');
 const dayjs = require('dayjs');
+const numeral = require('numeral');
 // TODO: remove react dep.
 const { createElement, Fragment } = require('react');
 // TODO: custom renderer.
@@ -16,6 +17,7 @@ function exec(template, style, data, printer) {
 
   const sandbox = Object.create(null);
   sandbox.dayjs = dayjs;
+  sandbox.numeral = numeral;
   sandbox.React = { createElement, Fragment };
   sandbox.data = data;
   sandbox.style = style;
