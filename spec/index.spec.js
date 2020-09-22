@@ -10,13 +10,13 @@ describe('hydrate', function () {
     const dom = hydrate(template, {}, {}, {});
     expect(dom).toEqual({
       elementName: 'root',
-      attributes: Object({ charset: 'utf-8', isa: 'esc' }),
+      attributes: { charset: 'utf-8', isa: 'esc' },
       children: [
-        Object({
+        {
           elementName: 'text',
-          attributes: Object({}),
+          attributes: {},
           children: 'Hello, world!',
-        }),
+        },
       ],
     });
   });

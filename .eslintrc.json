@@ -1,11 +1,15 @@
 {
   "parserOptions": {
     "ecmaVersion": 2019,
-    "sourceType": "script"
+    "sourceType": "module"
   },
+  "plugins": [
+    "jasmine"
+  ],
   "env": {
     "shared-node-browser": true,
-    "commonjs": true
+    "commonjs": true,
+    "jasmine": true
   },
   "extends": [
     "eslint:recommended",

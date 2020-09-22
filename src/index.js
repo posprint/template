@@ -1,5 +1,5 @@
 const vm = require('vm');
-const buble = require('buble');
+const sucrase = require('sucrase');
 const dayjs = require('dayjs');
 const numeral = require('numeral');
 // TODO: remove react dep.
@@ -8,7 +8,7 @@ const { createElement, Fragment } = require('react');
 const TestRenderer = require('react-test-renderer');
 
 function precompile(template) {
-  const { code } = buble.transform(template);
+  const { code } = sucrase.transform(template, { transforms: ['jsx'] });
   return code;
 }
 
