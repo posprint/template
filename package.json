@@ -1,11 +1,13 @@
 {
   "name": "@posprint/template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Templating language for POS print.",
-  "main": "src/index.js",
+  "main": "dist/template.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "lint": "eslint ./src/**/*.js",
-    "test": "jasmine"
+    "test": "jasmine",
+    "analyze": "source-map-explorer dist/*.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,9 @@
     "sucrase": "^3.15.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
     "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",
@@ -35,6 +40,9 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "jasmine": "^3.5.0",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "source-map-explorer": "^2.5.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-JSX template for POS print.
+JSX template for POS print. `numeral` and `dayjs` are embedded to provide formating utilities for amount and date.
 
 ## API
 
